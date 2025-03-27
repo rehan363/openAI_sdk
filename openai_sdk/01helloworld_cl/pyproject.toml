@@ -1,0 +1,20 @@
+[project]
+name = "helloworld-cl"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Rehan Ahmed", email = "rehan007313@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "chainlit>=2.4.302",
+    "openai-agents>=0.0.7",
+]
+
+[project.scripts]
+helloworld-cl = "helloworld_cl:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
